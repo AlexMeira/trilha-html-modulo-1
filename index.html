@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,53 +10,65 @@
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="indice">Índice<a href="#"></h2>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clientes">O que são <i>Clients</i>?</a></li>
+        <li><a href="#serves">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="historia">História dos Computadores <sup><a href="#indice">índice</a></sup> </h2>
+    <p>Em seu surgimento sendo máquinas desenvolvidas para <u>realizar cálculos</u>. Eram máquinas <mark>enormes</mark> que utilizavam válvulas para seu funcionamento e vieram a reduzir de tamanho com o surgimento dos Transistores.</p>
+    <p>Passando por <strong>George Boole</strong>, que em 1847 estabeleceu a lógica binária; o Nascimento da <abbr title="International Business Machines Corporation ">IBM</abbr> em 1890, Alan Turing em 1943 com a primeira geração do computador moderno; já em 1944 Mark I, o primeiro computador eletromecânico; até mais adiante com o surgimento dos computadores pessoais, houveram muitos saltos de técnologia. </p>
+    
+    <h2 id="clientes">O que são <i>Clients</i>? <sup><a href="#indice">índice</a></sup></h2>
+    <p><blockquote>No desenvolvimento da web, "lado do cliente" refere-se a tudo em um aplicativo web que é exibido ou ocorre no cliente (dispositivo do usuário final).</blockquote></p>
+    <p>Basicamente no modelo cliente-servidor, é oque o usuário final vê em sua tela e roda em seu navegador e os processos executados são conhecidos como Front-End.</p>
+    
+    <h2 id="servers">O que são <i>Servers</i>? <sup><a href="#indice">índice</a></sup></h2>
+    <p>O lado Servidor é tudo que acontece no servidor. O lado cliente comunica-se com o os web
+        server através do HTTP. Sempre que o lado cliente interage com o site através de algum
+        formulário ou pesquisa, é enviado uma request do navegador para o servidor que são respondidas
+        pelo servidor. Os processos que ocorrem do lado servidor são chamados de Back-End.</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML? <sup><a href="#indice">índice</a></sup></h2>
+    <p>Considera-se uma estrutura básica de HTML o código abaixo</p>
+    <img src="estrutura basica html.png">
+    <p>Como definição básica temos:</p> 
+        <ul>
+            <li>Definição do documento (doctype)</li>
+            <li>Cabeça (head)</li>
+            <li>Corpo (body)</li>
+        </ul>
+        <p>Sendo assim <strong>doctype</strong> utilizado para que navegadores e outros programas possam ler seu site e
+            entender que trata-se de HTML. <strong>Head</strong> é tudo que é carregado antes da abertura da página em si.
+            <strong>Body</strong> é o corpo da página, o documento em si. </p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas <sup><a href="#indice">índice</a></sup></h2>
+    <p>Uma lista ordenada trata-se de uma lista que possui numeração ou uma sequência. 
+        Em contra-partida a lista não-ordenada trata-se de uma lista, porém sem se preocupar com uma sequência.</p>
+        <p>A lista ordenada é representada por &lt;ol&gt; &lt;/ol&gt;, enquanto a lista não-ordenada
+            é representada por &lt;ul&gt; &lt;/ul&gt;, necessitando ambas o comando &lt;li&gt; &lt;/li&gt; que representa cada item listado, como no exemplo:
+        </p>
+        <img src="lista.png">
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h2 id="links">Links de referências </h2>
+    <font size="5">
+        <abbr title="Isso contém alteração de tamanho de fonte. Comando breve em desuso no HTML.">
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a target="_blank" href="http://profs.ic.uff.br/~aconci/evolucao.html#:~:text=1943%20-%20O%20inglês%20Alan%20Turing,eletrônico%2C%20é%20criado%20nos%20EUA.">A evolução dos computadores.</a></li>
+        <li> <a target="_blank" href="https://www.cloudflare.com/pt-br/learning/serverless/glossary/client-side-vs-server-side/">O que significa lado do cliente e lado do servidor? </a></li>
+        <li><a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/First_steps/Introduction">Introdução ao lado servidor</a></li>
+        <li><a target="_blank" href="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html">Estrutura básica Iniciando o código básico de HTML</a></li>
     </ul>
+</abbr>
+    </font>
+    <h3><sub> <a href="#indice">Voltar ao índice</a></sub></h3>
+    <h4><small>Nesse projeto foi utilizado apenas HTML <del>e CSS</del>.</small></h4>
 
 </body>
 </html>
